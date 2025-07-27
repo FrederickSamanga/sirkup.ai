@@ -117,7 +117,7 @@ export const SlidingTabs = ({
       </div>
 
       {/* Tab Content */}
-      <div className="relative min-h-[400px] md:min-h-[500px]">
+      <div className="relative overflow-visible">
         <AnimatePresence mode="wait">
           {activeTabData && (
             <motion.div
@@ -126,7 +126,7 @@ export const SlidingTabs = ({
               initial="hidden"
               animate="visible"
               exit="exit"
-              className="absolute inset-0"
+              className="w-full"
             >
               {activeTabData.content}
             </motion.div>
@@ -145,7 +145,7 @@ export const TabContentCard = ({
   className?: string;
 }) => {
   return (
-    <div className={`neumorphic-raised p-6 md:p-8 lg:p-12 h-full ${className}`}>
+    <div className={`neumorphic-raised p-3 sm:p-4 md:p-6 lg:p-8 xl:p-12 w-full ${className}`}>
       {children}
     </div>
   );

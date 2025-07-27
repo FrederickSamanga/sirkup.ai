@@ -85,21 +85,20 @@ export const HeroSection = () => {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[var(--base)]">
       <BackgroundOrbs density="high" />
       
-      <div className="container mx-auto px-6 md:px-12 lg:px-16 py-32 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 py-16 sm:py-24 md:py-32 relative z-10 mt-16 sm:mt-20 md:mt-24">
         <div className="text-center max-w-6xl mx-auto">
           {/* Main Headline */}
           <motion.div
             variants={textVariants}
             initial="hidden"
             animate="visible"
-            className="mb-8 md:mb-12 px-4 sm:px-0"
+            className="mb-8 md:mb-12 px-2 sm:px-4 md:px-0"
           >
-            <h1 className="text-giant giant-debossed font-black leading-none mb-4 text-balance text-center">
-              DEMOCRATISING
-              <br />
-              <span className="giant-debossed-accent">AI</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-giant giant-debossed font-black leading-[0.85] sm:leading-[0.9] mb-4 text-balance text-center break-words">
+              <span className="block">DEMOCRATISING</span>
+              <span className="giant-debossed-accent block">AI</span>
             </h1>
-            <div className="text-mega font-bold text-[var(--text)] opacity-80 text-balance text-center">
+            <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-mega font-bold text-[var(--text)] opacity-80 text-balance text-center px-2 sm:px-0">
               <span className="giant-debossed">for Sustainable Human Development</span>
             </div>
           </motion.div>
@@ -227,12 +226,12 @@ export const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
+        className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 z-20"
+        animate={{ y: [0, 8, 0] }}
+        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
       >
-        <div className="w-6 h-10 neumorphic-pressed rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-[var(--text-muted)] rounded-full mt-2 animate-pulse" />
+        <div className="w-5 h-8 sm:w-6 sm:h-10 neumorphic-pressed rounded-full flex justify-center items-start pt-2">
+          <div className="w-0.5 sm:w-1 h-2 sm:h-3 bg-[var(--text-muted)] rounded-full animate-pulse" />
         </div>
       </motion.div>
     </section>

@@ -37,46 +37,46 @@ export const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          <NeumorphicCard variant="flat" className="p-6 space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+          <NeumorphicCard variant="flat" className="p-4 sm:p-6 space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3">
-              <BookOpen className="w-6 h-6 text-[var(--accent)]" />
-              <h4 className="text-lg font-semibold text-[var(--text)]">SirkupAI Academy</h4>
+              <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--accent)]" />
+              <h4 className="text-base sm:text-lg font-semibold text-[var(--text)]">SirkupAI Academy</h4>
             </div>
-            <p className="text-[var(--text-muted)]">
+            <p className="text-sm sm:text-base text-[var(--text-muted)]">
               Structured learning programs covering prompt engineering, business automation, 
               and AI monetization strategies through interactive courses and live workshops.
             </p>
           </NeumorphicCard>
 
-          <NeumorphicCard variant="flat" className="p-6 space-y-4">
+          <NeumorphicCard variant="flat" className="p-4 sm:p-6 space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3">
-              <Users className="w-6 h-6 text-[var(--accent)]" />
-              <h4 className="text-lg font-semibold text-[var(--text)]">Community Learning</h4>
+              <Users className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--accent)]" />
+              <h4 className="text-base sm:text-lg font-semibold text-[var(--text)]">Community Learning</h4>
             </div>
-            <p className="text-[var(--text-muted)]">
+            <p className="text-sm sm:text-base text-[var(--text-muted)]">
               Community-driven learning experiences fostering collaboration and knowledge sharing 
               among AI enthusiasts and professionals.
             </p>
           </NeumorphicCard>
 
-          <NeumorphicCard variant="flat" className="p-6 space-y-4">
+          <NeumorphicCard variant="flat" className="p-4 sm:p-6 space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3">
-              <Lightbulb className="w-6 h-6 text-[var(--accent)]" />
-              <h4 className="text-lg font-semibold text-[var(--text)]">Practical Skills</h4>
+              <Lightbulb className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--accent)]" />
+              <h4 className="text-base sm:text-lg font-semibold text-[var(--text)]">Practical Skills</h4>
             </div>
-            <p className="text-[var(--text-muted)]">
+            <p className="text-sm sm:text-base text-[var(--text-muted)]">
               Hands-on training in real-world AI applications, from basic concepts to 
               advanced implementation strategies for various industries.
             </p>
           </NeumorphicCard>
 
-          <NeumorphicCard variant="flat" className="p-6 space-y-4">
+          <NeumorphicCard variant="flat" className="p-4 sm:p-6 space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3">
-              <TrendingUp className="w-6 h-6 text-[var(--accent)]" />
-              <h4 className="text-lg font-semibold text-[var(--text)]">Career Growth</h4>
+              <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--accent)]" />
+              <h4 className="text-base sm:text-lg font-semibold text-[var(--text)]">Career Growth</h4>
             </div>
-            <p className="text-[var(--text-muted)]">
+            <p className="text-sm sm:text-base text-[var(--text-muted)]">
               Professional development pathways designed to advance careers in AI, 
               with certification programs and industry-recognized credentials.
             </p>
@@ -102,56 +102,56 @@ export const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          <NeumorphicCard variant="pressed" className="p-6 space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+          <NeumorphicCard variant="pressed" className="p-4 sm:p-6 space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3">
-              <Target className="w-6 h-6 text-[var(--accent)]" />
-              <h4 className="text-lg font-semibold text-[var(--text)]">RankingAI</h4>
+              <Target className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--accent)]" />
+              <h4 className="text-base sm:text-lg font-semibold text-[var(--text)]">RankingAI</h4>
             </div>
-            <p className="text-[var(--text-muted)]">
+            <p className="text-sm sm:text-base text-[var(--text-muted)]">
               Advanced SEO optimization platform designed for the evolving search landscape, 
               helping businesses maintain competitive visibility and growth.
             </p>
-            <div className="neumorphic-flat p-3 rounded-lg">
+            <div className="neumorphic-flat p-2 sm:p-3 rounded-lg">
               <span className="text-xs font-medium text-[var(--accent)] uppercase tracking-wide">
                 Featured Product
               </span>
             </div>
           </NeumorphicCard>
 
-          <NeumorphicCard variant="pressed" className="p-6 space-y-4">
+          <NeumorphicCard variant="pressed" className="p-4 sm:p-6 space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3">
-              <Zap className="w-6 h-6 text-[var(--accent)]" />
-              <h4 className="text-lg font-semibold text-[var(--text)]">AgentForge</h4>
+              <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--accent)]" />
+              <h4 className="text-base sm:text-lg font-semibold text-[var(--text)]">AgentForge</h4>
             </div>
-            <p className="text-[var(--text-muted)]">
+            <p className="text-sm sm:text-base text-[var(--text-muted)]">
               No-code platform enabling small-to-medium enterprises to deploy custom AI agents 
               for customer support, lead management, and operational automation.
             </p>
-            <div className="neumorphic-flat p-3 rounded-lg">
+            <div className="neumorphic-flat p-2 sm:p-3 rounded-lg">
               <span className="text-xs font-medium text-[var(--accent)] uppercase tracking-wide">
                 No-Code Solution
               </span>
             </div>
           </NeumorphicCard>
 
-          <NeumorphicCard variant="flat" className="p-6 space-y-4">
+          <NeumorphicCard variant="flat" className="p-4 sm:p-6 space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3">
-              <Users className="w-6 h-6 text-[var(--accent)]" />
-              <h4 className="text-lg font-semibold text-[var(--text)]">Custom Solutions</h4>
+              <Users className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--accent)]" />
+              <h4 className="text-base sm:text-lg font-semibold text-[var(--text)]">Custom Solutions</h4>
             </div>
-            <p className="text-[var(--text-muted)]">
+            <p className="text-sm sm:text-base text-[var(--text-muted)]">
               Tailored AI systems designed specifically for your business needs, 
               from workflow automation to predictive analytics and decision support.
             </p>
           </NeumorphicCard>
 
-          <NeumorphicCard variant="flat" className="p-6 space-y-4">
+          <NeumorphicCard variant="flat" className="p-4 sm:p-6 space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3">
-              <Shield className="w-6 h-6 text-[var(--accent)]" />
-              <h4 className="text-lg font-semibold text-[var(--text)]">Enterprise Support</h4>
+              <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--accent)]" />
+              <h4 className="text-base sm:text-lg font-semibold text-[var(--text)]">Enterprise Support</h4>
             </div>
-            <p className="text-[var(--text-muted)]">
+            <p className="text-sm sm:text-base text-[var(--text-muted)]">
               Comprehensive support and maintenance services ensuring optimal performance 
               and continuous improvement of your AI implementations.
             </p>
@@ -177,62 +177,62 @@ export const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          <NeumorphicCard variant="pressed" className="p-6 space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+          <NeumorphicCard variant="pressed" className="p-4 sm:p-6 space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3">
-              <Scale className="w-6 h-6 text-[var(--accent)]" />
-              <h4 className="text-lg font-semibold text-[var(--text)]">AdalBot</h4>
+              <Scale className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--accent)]" />
+              <h4 className="text-base sm:text-lg font-semibold text-[var(--text)]">AdalBot</h4>
             </div>
-            <p className="text-[var(--text-muted)]">
+            <p className="text-sm sm:text-base text-[var(--text-muted)]">
               AI-powered legal assistance platform for gender-based violence survivors, 
               featuring multilingual support and trauma-informed design integrated with real-world legal workflows.
             </p>
-            <div className="neumorphic-flat p-3 rounded-lg">
+            <div className="neumorphic-flat p-2 sm:p-3 rounded-lg">
               <span className="text-xs font-medium text-[var(--accent)] uppercase tracking-wide">
                 Legal Aid Platform
               </span>
             </div>
           </NeumorphicCard>
 
-          <NeumorphicCard variant="flat" className="p-6 space-y-4">
+          <NeumorphicCard variant="flat" className="p-4 sm:p-6 space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3">
-              <Globe className="w-6 h-6 text-[var(--accent)]" />
-              <h4 className="text-lg font-semibold text-[var(--text)]">Climate Action</h4>
+              <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--accent)]" />
+              <h4 className="text-base sm:text-lg font-semibold text-[var(--text)]">Climate Action</h4>
             </div>
-            <p className="text-[var(--text-muted)]">
+            <p className="text-sm sm:text-base text-[var(--text-muted)]">
               AI solutions designed to combat climate change through data analysis, 
               predictive modeling, and sustainable resource management systems.
             </p>
           </NeumorphicCard>
 
-          <NeumorphicCard variant="flat" className="p-6 space-y-4">
+          <NeumorphicCard variant="flat" className="p-4 sm:p-6 space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3">
-              <Shield className="w-6 h-6 text-[var(--accent)]" />
-              <h4 className="text-lg font-semibold text-[var(--text)]">Extremism Prevention</h4>
+              <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--accent)]" />
+              <h4 className="text-base sm:text-lg font-semibold text-[var(--text)]">Extremism Prevention</h4>
             </div>
-            <p className="text-[var(--text-muted)]">
+            <p className="text-sm sm:text-base text-[var(--text-muted)]">
               Advanced AI systems for countering violent extremism through early detection, 
               intervention strategies, and community-based prevention programs.
             </p>
           </NeumorphicCard>
 
-          <NeumorphicCard variant="flat" className="p-6 space-y-4">
+          <NeumorphicCard variant="flat" className="p-4 sm:p-6 space-y-3 sm:space-y-4">
             <div className="flex items-center gap-3">
-              <Heart className="w-6 h-6 text-[var(--accent)]" />
-              <h4 className="text-lg font-semibold text-[var(--text)]">Human Rights</h4>
+              <Heart className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--accent)]" />
+              <h4 className="text-base sm:text-lg font-semibold text-[var(--text)]">Human Rights</h4>
             </div>
-            <p className="text-[var(--text-muted)]">
+            <p className="text-sm sm:text-base text-[var(--text-muted)]">
               Technology solutions promoting religious freedoms, gender equality, 
               and protection against various forms of discrimination and violence.
             </p>
           </NeumorphicCard>
         </div>
 
-        <NeumorphicCard variant="deep" className="p-6 md:p-8 text-center">
-          <h4 className="text-xl font-bold text-[var(--text)] mb-4">
+        <NeumorphicCard variant="deep" className="p-4 sm:p-6 md:p-8 text-center">
+          <h4 className="text-lg sm:text-xl font-bold text-[var(--text)] mb-3 sm:mb-4">
             Partnership Approach
           </h4>
-          <p className="text-[var(--text-muted)]">
+          <p className="text-sm sm:text-base text-[var(--text-muted)]">
             We collaborate with government institutions, inter-governmental agencies, 
             and civil society organizations to ensure our AI solutions create meaningful, 
             lasting positive impact in communities worldwide.
