@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --base: #e0e0e0;
+  --light: #ffffff;
+  --dark: #bebebe;
+  --text: #333333;
+  --text-muted: #666666;
+  --accent: #333333;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-[#e0e0e0] text-[#333333] font-sans antialiased;
+    color: var(--text);
+    background-color: var(--base);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Neumorphic Base Styles */
+  .neumorphic-raised {
+    background: var(--base);
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px var(--dark), -2px -2px 4px var(--light);
+  }
+
+  .neumorphic-pressed {
+    background: var(--base);
+    border-radius: 16px;
+    box-shadow: inset 4px 4px 8px var(--dark), inset -2px -2px 4px var(--light);
+  }
+
+  .neumorphic-flat {
+    background: var(--base);
+    border-radius: 16px;
+    box-shadow: 3px 3px 6px var(--dark), -2px -2px 4px var(--light);
+  }
+
+  .neumorphic-deep {
+    background: var(--base);
+    border-radius: 24px;
+    box-shadow: 8px 8px 16px var(--dark), -4px -4px 8px var(--light);
+  }
+
+  .neumorphic-subtle {
+    background: var(--base);
+    border-radius: 12px;
+    box-shadow: 2px 2px 4px var(--dark), -1px -1px 2px var(--light);
+  }
+
+  /* Hover state for subtle neumorphic effect */
+  .hover\:neumorphic-subtle:hover {
+    box-shadow: 2px 2px 4px var(--dark), -2px -2px 4px var(--light);
+  }
+
+  /* Section Divider */
+  .section-divider {
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+    background: var(--base);
+  }
+
+  .section-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    height: 20px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    box-shadow: inset 6px 6px 12px var(--dark), inset -6px -6px 12px var(--light);
+  }
+
+  .section-divider-mobile {
+    height: 40px;
+  }
+
+  .section-divider-mobile::before {
+    height: 12px;
+    left: 5%;
+    right: 5%;
+  }
+
+  /* Giant Text Effect */
+  .giant-debossed {
+    color: var(--text);
+    text-shadow: 
+      2px 2px 4px var(--dark),
+      -2px -2px 4px var(--light),
+      1px 1px 2px rgba(190, 190, 190, 0.6),
+      -1px -1px 2px rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(3px 3px 6px rgba(190, 190, 190, 0.3));
+  }
+
+  .giant-debossed-accent {
+    color: var(--text);
+    text-shadow: 
+      inset 3px 3px 6px var(--dark),
+      inset -3px -3px 6px var(--light),
+      2px 2px 4px rgba(190, 190, 190, 0.7),
+      -2px -2px 4px rgba(255, 255, 255, 0.9),
+      0 0 8px rgba(190, 190, 190, 0.4);
+    filter: drop-shadow(4px 4px 8px rgba(190, 190, 190, 0.4));
+    position: relative;
+  }
+
+  /* Floating Animation */
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .float-animation-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: -2s;
+  }
+
+  .float-animation-delayed-2 {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: -4s;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  /* Pulse Animation */
+  .pulse-neumorphic {
+    animation: pulseNeumorphic 4s ease-in-out infinite;
+  }
+
+  @keyframes pulseNeumorphic {
+    0%, 100% {
+      box-shadow: 8px 8px 16px var(--dark), -8px -8px 16px var(--light);
+    }
+    50% {
+      box-shadow: 12px 12px 24px var(--dark), -12px -12px 24px var(--light);
+    }
+  }
+
+  /* Responsive Typography */
+  .text-giant {
+    font-size: clamp(2rem, 12vw, 8rem);
+    line-height: 0.9;
+    font-weight: 900;
+  }
+
+  .text-mega {
+    font-size: clamp(1.25rem, 6vw, 3.5rem);
+    line-height: 1;
+    font-weight: 800;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--base);
+    box-shadow: inset 2px 2px 4px var(--dark), inset -2px -2px 4px var(--light);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--base);
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px var(--dark), -2px -2px 4px var(--light);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    box-shadow: inset 2px 2px 4px var(--dark), inset -2px -2px 4px var(--light);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .float-animation,
+  .float-animation-delayed,
+  .float-animation-delayed-2,
+  .pulse-neumorphic {
+    animation: none;
+  }
+  
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
