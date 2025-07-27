@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -63,11 +63,11 @@ export const NeumorphicButton = ({
   hover = false,
   ...props 
 }: NeumorphicCardProps & { onClick?: () => void; disabled?: boolean }) => {
-  const buttonVariants = {
+  const buttonVariants: Variants = {
     initial: { scale: 1 },
     hover: { 
       scale: hover ? 1.05 : 1,
-      transition: { type: "spring", stiffness: 400, damping: 30 }
+      transition: { type: "spring" as const, stiffness: 400, damping: 30 }
     },
     tap: { scale: 0.95 }
   };

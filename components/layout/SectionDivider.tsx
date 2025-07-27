@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 interface SectionDividerProps {
@@ -17,7 +17,7 @@ export const SectionDivider = ({
     threshold: 0.5,
   });
 
-  const dividerVariants = {
+  const dividerVariants: Variants = {
     hidden: { 
       scaleX: 0,
       opacity: 0,
@@ -27,7 +27,7 @@ export const SectionDivider = ({
       opacity: 1,
       transition: { 
         duration: 1.2,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: "easeOut",
       }
     }
   };

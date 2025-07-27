@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { ParallaxOrb } from '../animations/ScrollAnimations';
 
@@ -74,7 +74,7 @@ export const BackgroundOrbs = ({
     }
   };
 
-  const floatVariants = {
+  const floatVariants: Variants = {
     initial: { y: 0, rotate: 0 },
     animate: {
       y: [-10, 10, -10],
@@ -104,7 +104,9 @@ export const BackgroundOrbs = ({
             initial="initial"
             animate="animate"
             transition={{
-              ...floatVariants.animate.transition,
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut",
               delay: orb.animationDelay,
             }}
           />

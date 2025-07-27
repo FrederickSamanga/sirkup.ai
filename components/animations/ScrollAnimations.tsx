@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ReactNode } from 'react';
 
@@ -30,7 +30,7 @@ export const ScrollReveal = ({
     right: { y: 0, x: -50 },
   };
 
-  const variants = {
+  const variants: Variants = {
     hidden: { 
       opacity: 0,
       ...directionOffset[direction],
@@ -42,7 +42,7 @@ export const ScrollReveal = ({
       transition: { 
         duration: 0.8,
         delay,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: "easeOut",
       }
     }
   };
@@ -76,7 +76,7 @@ export const StaggerContainer = ({
     threshold: 0.1,
   });
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: {},
     visible: {
       transition: {
@@ -99,7 +99,7 @@ export const StaggerContainer = ({
 };
 
 export const StaggerItem = ({ children, className = '' }: { children: ReactNode; className?: string }) => {
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { 
       opacity: 0,
       y: 30,
@@ -109,7 +109,7 @@ export const StaggerItem = ({ children, className = '' }: { children: ReactNode;
       y: 0,
       transition: { 
         duration: 0.6,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: "easeOut",
       }
     }
   };

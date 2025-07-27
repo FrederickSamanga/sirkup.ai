@@ -1,13 +1,13 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { ArrowRight, Sparkles, Brain, Target } from 'lucide-react';
 import { BackgroundOrbs } from '../ui/BackgroundOrbs';
 import { NeumorphicButton, NeumorphicCard } from '../ui/NeumorphicCard';
 import { ScrollReveal } from '../animations/ScrollAnimations';
 
 export const HeroSection = () => {
-  const floatingVariants = {
+  const floatingVariants: Variants = {
     initial: { y: 0, rotate: 0 },
     animate: {
       y: [-10, 10, -10],
@@ -20,7 +20,7 @@ export const HeroSection = () => {
     }
   };
 
-  const textVariants = {
+  const textVariants: Variants = {
     hidden: { 
       opacity: 0,
       y: 100,
@@ -32,12 +32,12 @@ export const HeroSection = () => {
       scale: 1,
       transition: { 
         duration: 1.2,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: "easeOut",
       }
     }
   };
 
-  const subtitleVariants = {
+  const subtitleVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { 
       opacity: 1, 
@@ -45,12 +45,12 @@ export const HeroSection = () => {
       transition: { 
         duration: 0.8,
         delay: 0.3,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: "easeOut",
       }
     }
   };
 
-  const buttonVariants = {
+  const buttonVariants: Variants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { 
       opacity: 1, 
@@ -58,12 +58,12 @@ export const HeroSection = () => {
       transition: { 
         duration: 0.6,
         delay: 0.6,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: "easeOut",
       }
     }
   };
 
-  const statsVariants = {
+  const statsVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
     visible: { 
       opacity: 1, 
@@ -76,7 +76,7 @@ export const HeroSection = () => {
     }
   };
 
-  const statItemVariants = {
+  const statItemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 }
   };

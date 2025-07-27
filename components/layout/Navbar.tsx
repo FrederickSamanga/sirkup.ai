@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { NeumorphicButton } from '../ui/NeumorphicCard';
@@ -26,19 +26,19 @@ export const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navVariants = {
+  const navVariants: Variants = {
     hidden: { y: -100 },
     visible: { 
       y: 0,
       transition: { 
-        type: "spring", 
+        type: "spring" as const, 
         stiffness: 300, 
         damping: 30 
       }
     }
   };
 
-  const mobileMenuVariants = {
+  const mobileMenuVariants: Variants = {
     hidden: {
       opacity: 0,
       x: '100%',
@@ -47,7 +47,7 @@ export const Navbar = () => {
       opacity: 1,
       x: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 300,
         damping: 30,
       }
@@ -57,16 +57,16 @@ export const Navbar = () => {
       x: '100%',
       transition: {
         duration: 0.3,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: "easeOut",
       }
     }
   };
 
-  const linkVariants = {
+  const linkVariants: Variants = {
     initial: {},
     hover: {
       scale: 1.05,
-      transition: { type: "spring", stiffness: 400, damping: 30 }
+      transition: { type: "spring" as const, stiffness: 400, damping: 30 }
     },
     tap: { scale: 0.95 }
   };

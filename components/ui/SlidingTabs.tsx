@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useState, ReactNode } from 'react';
 
 interface Tab {
@@ -37,7 +37,7 @@ export const SlidingTabs = ({
     }
   };
 
-  const contentVariants = {
+  const contentVariants: Variants = {
     hidden: {
       opacity: 0,
       y: 20,
@@ -49,7 +49,7 @@ export const SlidingTabs = ({
       scale: 1,
       transition: {
         duration: 0.4,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: "easeOut",
       }
     },
     exit: {
@@ -58,7 +58,7 @@ export const SlidingTabs = ({
       scale: 0.95,
       transition: {
         duration: 0.3,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: "easeOut",
       }
     }
   };
